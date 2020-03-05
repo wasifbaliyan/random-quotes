@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/random-quotes/static/css/main.69d57d29.chunk.css",
+    "main.js": "/random-quotes/static/js/main.475a0180.chunk.js",
+    "main.js.map": "/random-quotes/static/js/main.475a0180.chunk.js.map",
+    "runtime-main.js": "/random-quotes/static/js/runtime-main.92b3bab1.js",
+    "runtime-main.js.map": "/random-quotes/static/js/runtime-main.92b3bab1.js.map",
+    "static/css/2.54ddc2c7.chunk.css": "/random-quotes/static/css/2.54ddc2c7.chunk.css",
+    "static/js/2.c6b2238c.chunk.js": "/random-quotes/static/js/2.c6b2238c.chunk.js",
+    "static/js/2.c6b2238c.chunk.js.map": "/random-quotes/static/js/2.c6b2238c.chunk.js.map",
+    "index.html": "/random-quotes/index.html",
+    "precache-manifest.ac10a0fd3b552d7910a2eca0963e1f92.js": "/random-quotes/precache-manifest.ac10a0fd3b552d7910a2eca0963e1f92.js",
+    "service-worker.js": "/random-quotes/service-worker.js",
+    "static/css/2.54ddc2c7.chunk.css.map": "/random-quotes/static/css/2.54ddc2c7.chunk.css.map",
+    "static/css/main.69d57d29.chunk.css.map": "/random-quotes/static/css/main.69d57d29.chunk.css.map",
+    "static/js/2.c6b2238c.chunk.js.LICENSE.txt": "/random-quotes/static/js/2.c6b2238c.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/random-quotes/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92b3bab1.js",
+    "static/css/2.54ddc2c7.chunk.css",
+    "static/js/2.c6b2238c.chunk.js",
+    "static/css/main.69d57d29.chunk.css",
+    "static/js/main.475a0180.chunk.js"
+  ]
+}
