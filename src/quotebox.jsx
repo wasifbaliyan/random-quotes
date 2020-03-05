@@ -7,7 +7,7 @@ const QuoteBox = ({ quote, color, onClick }) => {
         <blockquote className="blockquote">
           <p className="mb-0">
             <i className="fa fa-quote-left" aria-hidden="true"></i>
-            {" " + quote.quote}
+            {" " + quote.content}
           </p>
           <footer className="blockquote-footer">
             <cite title="Author">{quote.author}</cite>
@@ -18,7 +18,7 @@ const QuoteBox = ({ quote, color, onClick }) => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${quote.quote}" - ${quote.author}`}
+              href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${quote.content}" - ${quote.author}`}
               style={{
                 backgroundColor: color
               }}

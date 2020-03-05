@@ -9,16 +9,12 @@ class App extends Component {
     color: ""
   };
   async componentDidMount() {
-    let response = await fetch(
-      `http://quotes.stormconsultancy.co.uk/random.json`
-    );
+    let response = await fetch(`https://api.quotable.io/random`);
     let quote = await response.json();
     this.setState({ quote, color: this.generateRandomColor() });
   }
   handleClick = async () => {
-    let response = await fetch(
-      `http://quotes.stormconsultancy.co.uk/random.json`
-    );
+    let response = await fetch(`https://api.quotable.io/random`);
     let quote = await response.json();
     this.setState({ quote, color: this.generateRandomColor() });
   };
