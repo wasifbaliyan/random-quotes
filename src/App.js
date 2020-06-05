@@ -6,12 +6,17 @@ import "./App.css";
 class App extends Component {
   state = {
     quote: {},
-    color: ""
+    color: "",
+    isLoading: true,
   };
   async componentDidMount() {
     let response = await fetch(`https://api.quotable.io/random`);
     let quote = await response.json();
-    this.setState({ quote, color: this.generateRandomColor() });
+    this.setState({
+      quote,
+      isLoading: false,
+      color: this.generateRandomColor(),
+    });
   }
   handleClick = async () => {
     let response = await fetch(`https://api.quotable.io/random`);
@@ -25,30 +30,40 @@ class App extends Component {
     return `rgb(${r},${g},${b})`;
   };
   render() {
-    const { color, quote } = this.state;
+    const { color, quote, isLoading } = this.state;
     return (
       <React.Fragment>
         <div
           style={{
             height: "100vh",
             color: this.state.color,
-            backgroundColor: this.state.color
+            backgroundColor: this.state.color,
           }}
         >
           <div className="container text-center py-5">
-            <h2 className="text-light pt-5">Random Quote Generator</h2>
-            <h6 className="text-light pb-2 text-muted">
-              created by{" "}
+            <h2 className="text-light my-5">Random Quote Generator</h2>
+
+            {isLoading ? (
+              <div className="loader">Loading...</div>
+            ) : (
+              <QuoteBox
+                color={color}
+                quote={quote}
+                onClick={this.handleClick}
+              />
+            )}
+
+            <h6 className="text-light my-5 text-secondary">
+              &copy; 2020 created by{" "}
               <a
                 style={{ textDecoration: "none" }}
                 href="https://www.twitter.com/wasifbaliyan"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <em className="text-light">wasifbaliyan</em>
+                <em className="text-white">wasifbaliyan</em>
               </a>
             </h6>
-            <QuoteBox color={color} quote={quote} onClick={this.handleClick} />
           </div>
         </div>
       </React.Fragment>

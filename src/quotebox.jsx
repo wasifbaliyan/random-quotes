@@ -20,17 +20,17 @@ const QuoteBox = ({ quote, color, onClick }) => {
               rel="noopener noreferrer"
               href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${quote.content}" - ${quote.author}`}
               style={{
-                backgroundColor: color
+                backgroundColor: color,
               }}
-              className="btn btn-sm text-white  "
+              className="btn btn-sm text-white px-3 "
             >
               <i className="fa fa-twitter" aria-hidden="true"></i>
             </a>
             <button
               style={{
-                backgroundColor: color
+                backgroundColor: color,
               }}
-              className="btn btn-sm text-white "
+              className="btn btn-sm text-white px-3 "
               onClick={onClick}
             >
               <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
