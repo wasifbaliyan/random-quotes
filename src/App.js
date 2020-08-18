@@ -105,7 +105,7 @@ class App extends Component {
       <React.Fragment>
         <div
           style={{
-            height: "100vh",
+            minHeight: "100vh",
             color: this.state.color,
             backgroundColor: this.state.color,
           }}
